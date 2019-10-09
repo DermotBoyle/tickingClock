@@ -1,0 +1,25 @@
+body {
+  min-height: 100vh;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.hand {
+  border-top: 3px solid black;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  transition-timing-function: all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
